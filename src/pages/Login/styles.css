@@ -1,0 +1,76 @@
+header{
+    background: #fff;
+    grid-area:h;
+    padding: auto;
+
+
+  
+  }
+
+  .logo { 
+    display:         flex;
+    display: -webkit-flex; /* Garante compatibilidade com navegador Safari. */
+    justify-content: center;
+    align-items: center;
+    margin-top: 20%;
+  }
+
+
+  .span{
+    color: #cc1f89;
+    font-weight: 700;
+  }
+
+
+  .textos{
+   text-align: center;
+  }
+
+  main{
+    background: #d9e6f7;
+    grid-area:m;
+  
+  }
+  
+  aside{
+    background: #d9e6f7;
+    grid-area:a;
+  
+  }
+  
+  footer{
+    background: red;
+    grid-area:f
+  
+  }
+  
+  .container {
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 55Vh 35Vh;
+    grid-template-areas: "h m"
+                         "h a";
+    grid-gap: 10px;          
+    }
+  
+  @media (max-width:600px){
+    header{
+      display: block;
+    }
+
+    .container {
+        display:grid;
+        grid-template-columns: 4fr;
+        grid-template-rows: 25Vh 50Vh 25VH;
+        grid-template-areas: "h"
+                             "m" 
+                             "a";
+        grid-gap: 10px;          
+        }
+    
+        .textos{
+            display: none;
+        }
+
+
+  }
